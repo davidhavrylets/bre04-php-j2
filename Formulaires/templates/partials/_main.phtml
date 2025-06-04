@@ -1,0 +1,28 @@
+<main>
+    <h2>
+        <?= $pageTitle; ?>
+    </h2>
+    
+   
+   <form method="post" action="controllers/user-form.php">
+       
+        <label for="email">Adresse email :</label>
+             <input type="email" name="email" id="email" />
+              <label for="password">Mot de passe :</label>
+           <input type="password" name="password" id="password" />
+              <label for="email">Confirmation :</label>
+           <input type="password" name="confirmation" id="confirmation" />
+           
+        <button type ="submit"> Envoyer </button>
+
+   <br>
+
+    <label>
+        
+        <input type="checkbox" name="newsletter"> S'incrire a la newsletter 
+        
+    </label>
+          <button type="submit"> Allez, je veux!</button>
+
+   </form>
+</main>

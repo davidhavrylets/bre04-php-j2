@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title><?= $siteTitle ?></title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <?php require "templates/partials/_header.phtml"; ?>
+  
+    <?php
+        // Выбор нужного шаблона
+        if ($currentTemplate === "_about") {
+            require "templates/partials/_about.phtml";
+        } elseif ($currentTemplate === "_contact") {
+            require "templates/partials/_contact.phtml";
+        } else {
+            require "templates/partials/_homepage.phtml";
+        }
+    ?>
+
+    <?php require "templates/partials/_footer.phtml"; ?>
+</body>
+</html>
